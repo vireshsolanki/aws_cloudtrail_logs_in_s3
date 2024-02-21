@@ -71,10 +71,10 @@ This project consists of the following modules:
    resource "aws_cloudtrail" "test-trail" {
     depends_on = [ var.test-trail-s3-policy ]
    is_multi_region_trail = true
-  event_selector {
+     event_selector {
     include_management_events = true #this for the management events
     read_write_type           = "All"
-  }
+     }
 
    ```
    
